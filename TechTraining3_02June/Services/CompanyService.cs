@@ -9,7 +9,8 @@ namespace TechTraining3_02June.Services;
 
 public class CompanyService
 {
-    private static string connectionStringSb = @"";
+    private static string connectionStringSb =
+        @"Endpoint=sb://szkolenietechniczne.servicebus.windows.net/;SharedAccessKeyName=country;SharedAccessKey=7mJtFANhxaVWTrpx7Yk80oWc71SMMCMK/+ASbMRPcWA=;EntityPath=country-new";
 
     private static string queueName = "country-new";
     private readonly ServiceBusQueueSender _sbPublisher;
